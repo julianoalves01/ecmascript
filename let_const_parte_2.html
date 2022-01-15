@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script>
+
+            //escopos: global, função, bloco
+
+          
+
+            function escopoFuncao() {
+                console.log('funcao:', serie)
+                console.log('funcao:', serie2)
+
+                if(true) {
+                    if(true) {
+                        console.log('funcao:', serie)
+                        console.log('funcao:', serie2)
+                        var serie = 'friends'
+                        let serie2 = 'game of trones'
+                    }
+                }
+             
+                
+            }
+           
+            escopoFuncao()
+           /* let assossia a variavel a 
+           seu respectivo escorpo de bloco 
+           
+           let nao executa hoinsting */
+
+
+            {
+                console.log('funcao:', serie)
+                console.log('funcao:', serie2)
+                
+            }
+
+                console.log('funcao:', serie)
+                console.log('funcao:', serie2)
+
+          
+        </script>
+    </body>
+</html>

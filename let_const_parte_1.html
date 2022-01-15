@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+
+            //escopos: global, função, bloco
+
+            var serie = 'Game of Thrones'
+            function escopoFuncao() {
+                if(true) {
+                    if(true) {
+                       var serie2 = 'game og thrones'
+                    }
+                }
+             
+                
+            }
+           
+            escopoFuncao()
+
+
+           
+
+
+            console.log('global: ', serie2)
+            {
+                console.log('global: ', serie2)
+            }
+
+          
+        </script>
+    </body>
+</html>
